@@ -1,6 +1,5 @@
 const { Client } = require('eris');
 const Utils = require('./BotUtils.js');
-const AcoliumDatabase = require('./BotDatabase');
 const config = require('./BotConfig');
 
 module.exports = class BotClient extends Client {
@@ -18,8 +17,6 @@ module.exports = class BotClient extends Client {
 		this.cooldowns = new Map();
 		this.config = config;
 		this.data = [];
-
-		this.db = new AcoliumDatabase();
 	}
 
 	validate(options) {
@@ -35,7 +32,6 @@ module.exports = class BotClient extends Client {
 	async connect() {
 		require('events').EventEmitter.defaultMaxListeners = 0;
 		await this.utils.loadEvents();
-		await this.db.loadDatabase();
 		await this.utils.loadProperties();
 
 		await super.connect();
@@ -43,7 +39,6 @@ module.exports = class BotClient extends Client {
 		setTimeout(() => {
 			console.table([{
 				Events: true,
-				Database: true,
 				Properties: true,
 				Interactions: true,
 			}]);

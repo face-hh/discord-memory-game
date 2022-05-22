@@ -1,7 +1,4 @@
 const Event = require('../Structures/EventBase');
-const Schema = require('../Schemas/Users');
-const cron = require('node-cron');
-const Bot = require('../Schemas/Bot');
 
 module.exports = class extends Event {
 	constructor(...args) {
