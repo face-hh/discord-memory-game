@@ -1,3 +1,3 @@
 module.exports = {
-	devMode: true,
+	devMode: false,
 };

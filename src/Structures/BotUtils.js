@@ -23,14 +23,7 @@ module.exports = class Utilities {
 			this.client.interactions.set(interaction.name, interaction);
 			this.client.cooldowns.set(interaction.name, new Map());
 
-			if(interaction.name == 'eval') {
-				// this.client.createGuildCommand('956732347611508766', interaction);
-			}
-			else {
-				// this.client.createCommand(interaction);
-
-				this.client.createGuildCommand('881813009876520980', interaction);
-			}
+			this.client.createCommand(interaction);
 		}
 	}
 
