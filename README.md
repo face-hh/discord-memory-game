@@ -1,9 +1,17 @@
-# congenial-funicular
-You have been possesed by the magic potato. You must share this repository to all your friends or the majestic potato will eat your eyes at night and stare at you and stiff your bed.
+# Memory game
+Matching pairs, in Discord.
 
-# how to run
-## invite the bot (idk for how long it's gonna be on)
-https://discord.com/api/oauth2/authorize?client_id=973632742560505917&permissions=8&scope=applications.commands%20bot
-change permissions to your wish
-## self host
-download the zip, unzip it, run "npm i" inside the terminal, create a file called ".env", type in it "TOKEN=you", replace "you" with your discord bot token, run "node ." in terminal, done.
+![image](https://user-images.githubusercontent.com/69168154/205491336-a4f39f4d-92bb-4242-a3a0-028e589271f6.png)
+
+Documented here: https://www.youtube.com/watch?v=MTiPJq83SSc
+
+## Downloading
+1. Download the zip
+2. Unzip it
+3. run "npm i" inside the terminal
+4. create a file called ".env"
+5. type in it "TOKEN=you"
+6. replace "you" with your discord bot token
+7. run "node ." in terminal, done.
+
+I really don't care about the errors, please fix them yourself. :D
