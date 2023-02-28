@@ -16,7 +16,6 @@
 	},
 	"homepage": "https://github.com/WekyDev/Amit#readme",
 	"dependencies": {
-		"canvas": "^2.9.0",
 		"dotenv": "^16.0.0",
 		"eris": "^0.16.1",
 		"glob": "^7.2.0",
